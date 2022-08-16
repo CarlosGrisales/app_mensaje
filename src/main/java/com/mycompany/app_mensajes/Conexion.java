@@ -6,6 +6,7 @@ package com.mycompany.app_mensajes;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 /**
@@ -13,14 +14,15 @@ import java.sql.SQLException;
  * @author SSSA
  */
 class Conexion {
+
+    
     public Connection get_connection(){
         Connection conection = null;
         
         try{
             conection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mensaje_app","root","");
-            if (conection != null){
-                System.out.println("Conexion Exitosa");
-            }
+          
+            
         }catch(SQLException e){
         System.out.println(e);}
         return conection;

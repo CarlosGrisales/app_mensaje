@@ -25,8 +25,8 @@ public class App_mensajes {
             System.out.println("Menu de mensajes");
             System.out.println("1. crear mensaje");
             System.out.println("2. listar mensaje");
-            System.out.println("3. editar mensaje");
-            System.out.println("4. borrarmensaje");
+            System.out.println("3. borrar mensaje");
+            System.out.println("4. Editar mensaje");
             System.out.println("5. salir");
             
             //leer comentario
@@ -46,13 +46,13 @@ public class App_mensajes {
                 break;
                 
             case 3:
-                System.out.println("3. editar mensaje");
-                MensajesService.editarMensaje();
+                System.out.println("3. Borrar mensaje");
+                MensajesService.borrarMensaje();
                 break;
                 
             case 4: 
-                System.out.println("4. borrar mensajes");
-                MensajesService.borrarMensaje();
+                System.out.println("4. Editar mensajes");
+                MensajesService.editarMensaje();
                        
                 
             default: 
